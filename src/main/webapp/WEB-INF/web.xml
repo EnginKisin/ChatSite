@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>ArkadasAramaSitesi</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>MemberLoginServlet</display-name>
+    <servlet-name>MemberLoginServlet</servlet-name>
+    <servlet-class>web.MemberLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberLoginServlet</servlet-name>
+    <url-pattern>/MemberLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>memberLoginServlet</display-name>
+    <servlet-name>memberLoginServlet</servlet-name>
+    <servlet-class>web.AAS.memberLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>memberLoginServlet</servlet-name>
+    <url-pattern>/memberLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>memberLogoutServlet</display-name>
+    <servlet-name>memberLogoutServlet</servlet-name>
+    <servlet-class>web.AAS.memberLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>memberLogoutServlet</servlet-name>
+    <url-pattern>/memberLogoutServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+body {
+  	background: #ffc000;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+    height: 100%;
+  width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	color: #fefefe;
+  	flex-direction: column;
+  	font-family: 'Montserrat', sans-serif;
+  	height: 100vh;
+ 	margin: -20px 0 50px;
+}
+
+h1{
+  color: #222222;
+  font-weight: bold;
+  font-size: 48px;
+  
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h2 {
+  color: #ffc000;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+button {
+  border-radius: 20px;
+  border: 1px #000000;
+  background-color: #ffc000;
+  color: #111111;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+form {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  background-color: #333333;
+  color: #fefefefe;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+
+.container {
+  background-color: #222222;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;  
+  padding: 10px 50px;
+  margin:  20px 20px;
+  border-radius: 10px;
+  border-color: #ffc000;
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.p {
+	color: #fefefe;
+	position: relative;  
+	padding: 10px 50px;
+	margin:  5px 5px;
+}
+
+a {
+  color: #fefefe;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+}
+
+.log-in-container {
+  right: 0;
+  width: 50%;
+}
+
+.container.right-panel-active .log-in-container {
+  transform: translateX(100%);
+  animation: show 0.6s;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+	padding:10px 15px 9px 15px !important;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	position:relative;
+	z-index:2;
+	padding:0;
+	letter-spacing:1px;
+}
+a.navbar img {
+	width:52px !important;
+	font-size:20px !important;
+	padding-top:11px !important;
+	padding-bottom:13px !important;
+}
+
+
+.navbar a:hover {
+	background: #D8D4C9;
+	color: black;
+}

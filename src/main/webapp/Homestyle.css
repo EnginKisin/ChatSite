@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fefefe;
+  }
+   
+  body {
+    margin: 20px auto;
+    font-weight: 300;
+    background-position: center;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+  }
+   
+  form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+  }
+   
+input {
+  background-color: #333333;
+  color: #fefefefe;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+}
+
+
+mark {
+  background-color: #ffc000;
+  color: black;
+}
+.welcome {
+	color: #ffc000;
+}
+   
+  a {
+    color: #fefefe;
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
+   
+   
+   #memberBox{
+ width: 220px;
+ height: 100%;
+   	border: 4px solid #000000;
+   }
+   
+   #messageBox{
+    width: 220px;
+ height: 100%;
+   	border: 4px solid #000000;
+   }
+   
+   #friendsBox{
+    width: 220px;
+ height: 100%;
+	border: 4px solid #000000;
+   }
+   
+   #friendsView{
+    width: 220px;
+ height: 100%;
+    border: 4px solid #000000;
+   }
+   
+   #friendsDelete{
+    width: 220px;
+ height: 100%;
+    border: 4px solid #000000;
+   }
+   
+   #messageView{
+     width: 220px;
+ height: 100%;
+    border: 4px solid #000000;
+   }
+   
+  #main-container,
+  #loginform {
+  	right: 0;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #111111;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+   
+  #loginform {
+    padding-top: 18px;
+    text-align: center;
+  }
+   
+  #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+   
+  #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #333333;
+    height: 300px;
+    width: 530px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+   
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+      width: 505px;
+  }
+  #name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+  }
+   
+  #submitmsg,
+  #enter{
+    background: #ffc000;
+    border: 2px solid #e65100;
+    color: black;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+   
+  .error {
+    color: #ff0000;
+  }
+   
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+    margin: 10px;
+  }
+   
+  #menu p.welcome {
+    flex: 1;
+    color: #ffc000;
+  }
+   
+  a#exit {
+    color: #000000;
+    background: #ffc000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .label, .side-title {
+  color: #ffc000;
+  }
+
+  .container {
+ 	background-color: #111111;
+ 	height: 100%;
+ 	display: flex;
+ 	overflow: hidden;
+ 	width: 100%;
+ 	border-radius: 20px;
+ 	font-size: 15px;
+ 	font-weight: 500;
+ 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+ 	position: center;
+}
+
+
+.sidebar-left {
+ width: 200px;
+ height: 100%;
+ padding: 30px;
+ display: flex;
+ flex-direction: column;
+ flex-shrink: 0;
+ transition-duration: 0.2s;
+ overflow-y: auto;
+ overflow-x: hidden;
+}
+.sidebar-right {
+ width: 200px;
+ height: 100%;
+ padding: 30px;
+ display: flex;
+ flex-direction: column;
+ flex-shrink: 0;
+ transition-duration: 0.2s;
+ overflow-y: auto;
+ overflow-x: hidden;
+}
+
+
+  .logo {
+   display: flex;
+  }
+
+  .side-wrapper {
+   width: 30px;
+  }
+  
+  .side-menu {
+ display: flex;
+ flex-direction: column;
+ }
+ .side-title {
+ font-size: 12px;
+ letter-spacing: 0.07em;
+ margin-bottom: 24px;
+}
+
+.side-wrapper {
+ border-bottom: 1px solid var(--border-color);
+ padding: 36px 0;
+ width: 145px;
+}
+
+.wrapper {
+ display: flex;
+ flex-direction: column;
+ flex-grow: 1;
+}
+
+.header {
+ display: flex;
+ align-items: center;
+ flex-shrink: 0;
+ padding: 30px;
+}
+.main-container {
+ display: flex;
+ flex-direction: column;
+ padding: 30px 30px 30px;
+ flex-grow: 1;
+ overflow: auto;
+}
+
+  button {
+  border-radius: 20px;
+  border: 1px #000000;
+  background-color: #222222;
+  color: #ffc000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  	margin: 8px 8px 8px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+ 
+button:active {
+
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #fefefe;
+}
+
+.flex {
+	  display: flex;
+}
